@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #ECE9E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh ;
+}
+.mobile-container{
+     background-color: white;
+    width: 400px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px 2px #3333331a;
+    overflow: hidden;
+}
+img{
+    max-width: 100%;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+header input{
+    background-color: #ECE9E6;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 16px;
+    font-family: inherit;
+}
+header button{
+    background-color: transparent;
+    border: none;
+    color: #aaa;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.fav-container{
+  
+    background: #00c6ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+    text-align: center;
+    padding: 0.25rem 1rem;
+}
+.fav-meals{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+.fav-meals li{
+    width: 75px;
+    margin: 5px;
+}
+.fav-meals li img{
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 10px 2px #3333331a;
+    border-radius: 50%;
+    width: 76px;
+    height: 76px;
+    object-fit: cover;
+}
+.fav-meals li span{
+    font-size: 13px;
+}
+
+.meal{
+    border-radius: 3px;
+    box-shadow: 0 0 10px 2px #3333331a;
+    margin: 1.5rem;
+    overflow: hidden;
+
+}
+.meal-header{
+    position: relative;
+}
+.meal-header .random{
+    position: absolute;
+    top: 1rem;
+    background-color: #fff;
+    padding: 0.25rem 1rem;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.meal-header img{
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+}
+.meal-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}
+.meal-body h4{
+    margin: 0;
+}
+.meal-body .fav-btn{
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    color: royalblue;
+    cursor: pointer;
+}
+.meal-body .fav-btn .active{
+    color: rgb(39, 30, 30);
+}
